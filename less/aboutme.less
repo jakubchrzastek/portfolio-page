@@ -1,0 +1,122 @@
+
+#omniebelka {
+ 
+    background: linear-gradient(
+    fade(@color-main, 80%), 
+    fade(@color-main, 80%)), url(/img/06.jpg);
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+
+    h1 {
+        text-align: center; 
+        padding: 30px;
+        font-size: 8rem; 
+        color: white;
+        font-family: 'Amatic SC', cursive;
+    }
+    
+    .boldline {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 3px;
+        background-color: #fff;
+        
+    }
+    
+}
+
+#omnie{
+    background: linear-gradient(
+        
+     rgba(249, 250, 251, 0.3), 
+   rgba(249, 250, 251, 0.3)), url(/img/geometry2.png);
+    overflow: hidden;
+    border-top: 1px solid darken(@szary, 10%);
+    border-bottom: 1px solid darken(@szary, 10%);
+   
+    #omnietext{
+       padding-top: 150px;
+       font-size: 20px;
+    }
+    #omniefoto{
+
+        img{
+            display: block;
+            margin: 0px auto;
+        }
+    }
+}
+
+#skills{
+     
+     text-align: center;
+     padding: 20px;
+    h2{
+        text-align: center;
+        margin-bottom: 10px;
+        .fa {
+            color: @color-main;
+        }
+    }
+    
+    img{
+    opacity: 0.8; 
+    margin: 20px auto;
+    text-align: center;
+    display: inline-block;
+    height: 100px;
+        
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+#referencje{
+    background: @color-main;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+    
+    #referencje-content{
+    border: 2px solid darken(@color-main, 5%);
+    padding: 50px 10px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+       
+        .fa-quote-left{
+            color: #fff;
+            top: 20px;
+            left: 20px;
+            position: absolute;
+        }
+        
+        .fa-quote-right{
+            color: #fff;
+            bottom: 20px;
+            right: 20px;
+            position: absolute;
+        }
+        
+        p{
+           margin-top: 20px;
+            color: @color-active;
+            font-size: 14px;
+         
+        }
+        
+        img{
+        border-radius: 50%;
+        width: 150px;
+        padding: 2px;
+        border: 1px solid #fff;
+        }
+}
+}
+
